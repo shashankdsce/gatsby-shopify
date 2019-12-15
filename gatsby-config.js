@@ -30,7 +30,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
@@ -63,16 +63,16 @@ module.exports = {
         '~': path.join(__dirname, 'src/'),
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "UA-134421805-1",
-        anonymize: true,
-        respectDNT: true,
-      },
-    },
+  //  {
+    //  resolve: `gatsby-plugin-google-analytics`,
+    //  options: {
+      //  trackingId: "UA-134421805-1",
+      //  anonymize: true,
+      //  respectDNT: true,
+      //},
+    //},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+     'gatsby-plugin-offline',
   ],
 }
